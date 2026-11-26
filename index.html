@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danny Obeid | Computer Engineering</title>
+<meta name="description" content="Danny Obeid is a Computer Engineering student at York University working across software engineering, backend development and applied AI.">
+<meta property="og:title" content="Danny Obeid | Computer Engineering">
+<meta property="og:description" content="Computer Engineering student at York University working across software engineering, backend development and applied AI.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dannyo17.github.io/">
+<meta property="og:image" content="https://dannyo17.github.io/assets/og-image.png">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1254">
+<meta property="og:image:alt" content="Danny Obeid, Computer Engineering at York University">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dannyo17.github.io/assets/og-image.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+
+<a class="skip" href="#projects">Skip to projects</a>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="mark" href="#">Danny Obeid</a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero hero-b">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="status"><span class="dot" aria-hidden="true"></span>Open to Winter 2027 and Summer 2027 internships</p>
+      <h1>Danny Obeid</h1>
+      <p class="hero-sub">Computer Engineering student at York University, building software from backend APIs to applied AI.</p>
+      <ul class="focus">
+        <li>Backend Development</li><li>Applied AI</li><li>Embedded Systems</li><li>Databases</li>
+      </ul>
+      <div class="hero-links">
+        <a class="btn primary" href="https://www.linkedin.com/in/danny-obeid-069662326/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/dannyo17" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:dannyobeid@gmail.com">Email</a>
+      </div>
+    </div>
+    <img class="hero-photo" src="assets/photo.jpg" alt="Danny Obeid" width="936" height="1170">
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section wrap" aria-labelledby="about-h">
+  <div class="section-head"><h2 id="about-h">About Me</h2></div>
+
+  <div class="about">
+
+    <div class="about-text">
+      <p>I started on the hardware side. Before university, I worked at two computer stores in Markham, and I've built five custom PCs of my own. University pulled me toward software, and now the work I enjoy most sits between the two: firmware that talks to a server, or a backend that has to be fast and reliable.</p>
+      <p>I learn the most by building things, testing them and fixing what breaks, so a lot of what I know beyond the classroom came from personal projects and my internship rather than lectures.</p>
+
+
+      <div class="about-grid">
+        <div>
+          <h3>Education</h3>
+          <p class="strong">York University, Lassonde School of Engineering</p>
+          <p>Bachelor of Engineering, Computer Engineering<br>September 2024 – April 2029</p>
+          <p class="sub-h">Additional training</p>
+          <p>AWS course, Amazon Web Services</p>
+        </div>
+        <div>
+          <h3>Relevant Coursework</h3>
+          <ul class="course-list">
+            <li>Fundamentals of Data Structures</li>
+            <li>Advanced Object-Oriented Programming</li>
+            <li>Computer Organization</li>
+            <li>Introduction to Embedded Systems</li>
+            <li>Digital Logic Design</li>
+            <li>Introduction to Databases and SQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section wrap" aria-labelledby="projects-h">
+  <div class="section-head">
+    <h2 id="projects-h">Projects</h2>
+    <div class="filter" role="group" aria-label="Filter projects">
+      <button type="button" aria-pressed="true" data-filter="all">All</button>
+      <button type="button" aria-pressed="false" data-filter="software">Software</button>
+      <button type="button" aria-pressed="false" data-filter="hardware">Hardware</button>
+    </div>
+  </div>
+
+  <!-- RAG -->
+  <article class="feature" data-kind="software">
+    <div class="feature-text">
+      <p class="when">In progress</p>
+      <h3>AI Earnings Analyst</h3>
+      <p class="subtitle">A retrieval-augmented generation (RAG) research assistant for SEC filings</p>
+      <p>Ask a question about NVIDIA, AMD, Microsoft or Amazon earnings, and it answers using their SEC filings, with a citation for every number. If the filings don't cover the question, it says so instead of making something up.</p>
+      <p>I built it to learn RAG properly, which meant measuring everything. Before I kept any change, I tested it against a fixed set of questions with known answers.</p>
+
+      <dl class="results">
+        <div><dt>82%</dt><dd>Answerable questions answered correctly (18 of 22). Three of those had the right figure but rounded it, so a strict grader scores it at 68%. The same model without retrieval got 0%.</dd></div>
+        <div><dt>9 of 9</dt><dd>Unanswerable questions correctly declined. Without retrieval, the model invented answers to 2 of 6.</dd></div>
+        <div><dt>25 of 25</dt><dd>Correct whenever the right passage was in the top 5 search results.</dd></div>
+        <div><dt>1.8 s</dt><dd>Average response time.</dd></div>
+      </dl>
+
+      <details>
+        <summary>How it works and what I learned</summary>
+        <div class="details-body">
+          <p>The app downloads 40 filings (10-Ks, 10-Qs and earnings releases) from SEC EDGAR, cleans them into plain text, and splits them into about 3,400 chunks. Each chunk is embedded and stored in a Chroma vector database. When a question comes in, the app detects which companies it mentions, searches only their filings, and sends the top five passages to Claude with instructions to answer only from those passages and cite each claim.</p>
+          <p>Testing was the most interesting part. I wrote 28 questions with the exact supporting evidence for each one, including 6 that the filings can't answer. I scored the system with retrieval metrics (Recall@5 and mean reciprocal rank) and a separate model acting as a judge. Then I tested eight ways to improve retrieval, including reranking, hybrid keyword and vector search, smaller chunks, and a larger embedding model. Only one change, searching each company separately, actually helped. Most of the others made results worse.</p>
+          <p>When I looked at the failures, the search almost always found the right filing. The problem was that the chunk holding the exact number lost to a different chunk from the same filing that matched the question's wording more closely. Because of that, my next step is extracting the financial tables as structured data rather than tuning the search further.</p>
+          <p>Once tuning was done, I wrote a second set of 23 questions the system had never seen and ran it once. It answered 12 of the 20 answerable questions and declined all 3 unanswerable ones.</p>
+        </div>
+      </details>
+
+      <ul class="tags" aria-label="Technologies">
+        <li>Python</li><li>FastAPI</li><li>Chroma</li><li>Claude API</li><li>Docker</li>
+      </ul>
+      <p class="proj-links"><a href="https://github.com/dannyo17/earnings-analyst" target="_blank" rel="noopener">View code and full results on GitHub</a></p>
+    </div>
+    <figure class="feature-media shot">
+      <img src="assets/earnings-analyst.png" width="807" height="822" loading="lazy" alt="The AI Earnings Analyst web app answering a question about Microsoft's operating income, with numbered citations to five filing passages listed underneath.">
+      <figcaption>Answering a question about Microsoft's quarterly operating income. Each numbered citation links to its source passage.</figcaption>
+    </figure>
+  </article>
+
+  <!-- ALARM -->
+  <article class="feature" data-kind="hardware">
+    <div class="feature-text">
+      <p class="when">April 2026</p>
+      <h3>Anti-Theft Motion Alarm</h3>
+      <p class="subtitle">An embedded alarm that tells real movement apart from bumps and vibration</p>
+      <p>An ESP32-C3 and an accelerometer attach to anything you don't want moved. When the alarm is armed and someone picks the object up, it sounds a siren and sends an alert over Wi-Fi to a Raspberry Pi, which logs the event and can send a notification to my phone.</p>
+      <p>The hard part wasn't detecting movement. It was <em>not</em> detecting everything else. My first version went off whenever someone knocked on the table, closed a door, or had a phone vibrate next to it.</p>
+
+      <dl class="results">
+        <div><dt>80%</dt><dd>Fewer false alarms across 100 trials on real hardware, compared to a simple threshold.</dd></div>
+        <div><dt>150 ms</dt><dd>Of sustained movement required to trigger the alarm, so a quick knock never sets it off.</dd></div>
+      </dl>
+
+      <details>
+        <summary>How the detection works</summary>
+        <div class="details-body">
+          <p>Every 10 milliseconds, each sensor reading goes through four steps:</p>
+          <ol>
+            <li><strong>Bias correction:</strong> when the alarm is armed, it spends two seconds learning what "sitting still" looks like, then subtracts that from every reading. This removes the sensor's built-in offset and the effect of gravity.</li>
+            <li><strong>Smoothing:</strong> an exponential moving average filters out noise and short spikes.</li>
+            <li><strong>Adaptive threshold:</strong> the trigger level is based on how noisy the sensor was during calibration, so a noisy sensor doesn't cause false alarms and a quiet one stays sensitive.</li>
+            <li><strong>Persistence check:</strong> the signal has to stay above the threshold for about 150 milliseconds before it counts as real movement.</li>
+          </ol>
+          <p>All of this runs inside a state machine with five states: disarmed, arming, calibrating, armed and alarm. Wi-Fi alerts run in a separate FreeRTOS task, so a slow network never interrupts sensor sampling, and the siren still works if Wi-Fi goes down.</p>
+          <p>To measure the 80% improvement, I added a test mode that switches between the simple detector and the filtered one, then ran the same knocks, door slams, phone vibrations and real pickups against both. The detection logic and state machine also have unit tests that run against a simulated sensor.</p>
+        </div>
+      </details>
+
+      <ul class="tags" aria-label="Technologies">
+        <li>ESP32-C3</li><li>C++</li><li>FreeRTOS</li><li>Raspberry Pi</li><li>Python</li><li>Flask</li><li>SQLite</li>
+      </ul>
+      <p class="proj-links"><a href="https://github.com/dannyo17/anti-theft-motion-alarm" target="_blank" rel="noopener">View code, wiring and tests on GitHub</a></p>
+    </div>
+
+    <figure class="feature-media demo" id="alarm-demo">
+      <div class="demo-head">
+        <p class="demo-title">Try it: the same six seconds, two detectors</p>
+        <div class="demo-toggle" role="group" aria-label="Choose detector">
+          <button type="button" data-mode="naive" aria-pressed="true">Simple threshold</button>
+          <button type="button" data-mode="filtered" aria-pressed="false">Filtered</button>
+        </div>
+      </div>
+      <svg class="demo-plot" viewBox="0 0 640 300" role="img" aria-labelledby="demo-desc">
+        <desc id="demo-desc">A chart of simulated accelerometer readings over six seconds, showing the detection threshold and the points where the alarm goes off.</desc>
+      </svg>
+      <p class="demo-count" aria-live="polite"></p>
+      <figcaption>Simulated data, not a recording. It follows the same steps as the real firmware to show why filtering matters.</figcaption>
+    </figure>
+  </article>
+
+  <!-- OTHER PROJECTS -->
+  <div class="others-head">
+    <h3>Other Projects</h3>
+    <p>From my internship, my club and my own time.</p>
+  </div>
+  <div class="others">
+    <article class="card" data-kind="software">
+      <div class="card-top">
+        <p class="card-kind">Internship project</p>
+        <p class="card-when">2026</p>
+      </div>
+      <h4>HVAC Products Management API</h4>
+      <p>A REST API that manages more than 10,000 HVAC product records for Johnson Controls Arabia. It has 15 endpoints, secure login with JSON Web Token (JWT) authentication and salted password hashing, custom error-handling middleware, and over 50 unit tests.</p>
+      <p class="card-note">This is company code, so I can't share the repository, but I'm happy to walk through how it's built.</p>
+      <ul class="tags"><li>C#</li><li>ASP.NET Core</li><li>Entity Framework Core</li><li>SQL Server</li><li>xUnit</li></ul>
+    </article>
+
+    <article class="card" data-kind="software">
+      <div class="card-top">
+        <p class="card-kind">Club project</p>
+        <p class="card-when">2025 – Present</p>
+      </div>
+      <h4>IBMZ YorkU Club Dashboard</h4>
+      <p>As the club's Technical Lead, I'm building a student-facing dashboard that puts workshop material and club resources in one place for our 30+ members.</p>
+      <ul class="tags"><li>JavaScript</li><li>CSS</li><li>HTML</li><li>GitHub</li><li>Vercel</li></ul>
+      <p class="proj-links card-link"><a href="https://ibm-z-york-u-website-nu.vercel.app/" target="_blank" rel="noopener">Visit the live site</a></p>
+    </article>
+
+    <article class="card" data-kind="hardware">
+      <div class="card-top">
+        <p class="card-kind">Personal project</p>
+        <p class="card-when">2025</p>
+      </div>
+      <h4>Automated Plant Irrigation System</h4>
+      <p>An Arduino Nano reads soil moisture sensors and controls a small water pump using a state machine, so the plant is watered only when the soil is dry.</p>
+      <ul class="tags"><li>Arduino Nano</li><li>MATLAB</li><li>Java</li><li>Sensors</li></ul>
+    </article>
+
+
+  </div>
+  <p class="filter-empty" hidden>No projects in this category.</p>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section wrap" aria-labelledby="exp-h">
+  <div class="section-head"><h2 id="exp-h">Experience</h2></div>
+
+  <ol class="timeline">
+    <li>
+      <div class="tl-when">July 2026 – Present</div>
+      <div class="tl-body">
+        <h3>Software Engineer Intern</h3>
+        <p class="tl-org">Johnson Controls Arabia · Jeddah, Saudi Arabia (Remote)</p>
+        <ul>
+          <li>Built a RESTful Web API with C#, ASP.NET Core, Entity Framework Core and SQL Server to manage more than 10,000 HVAC product records, with 15 endpoints supporting full CRUD operations, filtering and pagination.</li>
+          <li>Implemented user registration and login with salted PBKDF2 password hashing and JSON Web Token (JWT) authorization, so only verified users can access product data.</li>
+          <li>Developed custom middleware for request processing and exception handling, added encryption for sensitive data, and validated the API with over 50 unit tests and Swagger.</li>
+          <li>Building interactive dashboards with React and TypeScript, connected to backend APIs.</li>
+          <li>Began the internship on the data team, developing Power BI dashboards and DAX measures before moving into web development.</li>
+        </ul>
+        <ul class="tags"><li>C#</li><li>ASP.NET Core</li><li>Entity Framework Core</li><li>SQL Server</li><li>xUnit</li><li>React</li><li>TypeScript</li><li>Power BI</li></ul>
+        <p class="tl-note">My team is in Jeddah, seven hours ahead of Toronto, so we overlap for about an hour each day. It has taught me to come into that hour prepared, with my questions ready.</p>
+      </div>
+    </li>
+    <li>
+      <div class="tl-when">June 2022 – August 2024</div>
+      <div class="tl-body">
+        <h3>Computer Hardware Specialist</h3>
+        <p class="tl-org">Best 4 Less Computer Liquidation · Markham, Ontario</p>
+        <ul>
+          <li>Repaired more than 400 desktops and laptops, from component-level replacements to CPU upgrades.</li>
+          <li>Migrated customer data to new drives through SSD cloning, keeping files and settings intact.</li>
+          <li>Diagnosed and resolved critical hardware and software failures on Windows and macOS to minimize downtime for customers.</li>
+        </ul>
+        <ul class="tags"><li>Hardware diagnostics</li><li>Windows</li><li>macOS</li><li>SSD cloning</li></ul>
+      </div>
+    </li>
+    <li>
+      <div class="tl-when">February 2021 – May 2022</div>
+      <div class="tl-body">
+        <h3>Amazon Sales and Logistics Associate</h3>
+        <p class="tl-org">Laptop King · Markham, Ontario</p>
+        <ul>
+          <li>Managed the store's Amazon Seller Central operations, improving product listings and search optimization to increase visibility and sales.</li>
+          <li>Coordinated logistics for more than 50 shipments a week, including packaging, inventory labelling and dispatch.</li>
+          <li>Answered more than 15 customer inquiries a day, advising on laptop specifications and hardware compatibility.</li>
+        </ul>
+        <ul class="tags"><li>Amazon Seller Central</li><li>Logistics</li><li>Customer support</li></ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section wrap" aria-labelledby="skills-h">
+  <div class="section-head"><h2 id="skills-h">Technical Skills</h2></div>
+  <div class="skills">
+    <div>
+      <h3>Languages</h3>
+      <ul class="tags"><li>Python</li><li>C#</li><li>C</li><li>C++</li><li>Java</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>Bash</li><li>MATLAB</li><li>HTML</li><li>CSS</li></ul>
+    </div>
+    <div>
+      <h3>Frameworks and Libraries</h3>
+      <ul class="tags"><li>ASP.NET Core</li><li>Entity Framework Core</li><li>xUnit</li><li>React</li><li>Node.js</li><li>FastAPI</li><li>Flask</li></ul>
+    </div>
+    <div>
+      <h3>Data and AI</h3>
+      <ul class="tags"><li>SQL Server</li><li>SQLite</li><li>Power BI</li><li>DAX</li><li>Chroma</li><li>Retrieval-augmented generation</li><li>Claude API</li></ul>
+    </div>
+    <div>
+      <h3>Hardware and Embedded Systems</h3>
+      <ul class="tags"><li>ESP32-C3</li><li>Arduino</li><li>Raspberry Pi</li><li>FreeRTOS</li><li>Verilog</li><li>DE10-Lite FPGA</li><li>Quartus Prime</li><li>RISC-V Assembly</li></ul>
+    </div>
+    <div>
+      <h3>Lab Equipment</h3>
+      <ul class="tags"><li>Oscilloscope</li><li>Function generator</li><li>Multimeter</li><li>DC power supply</li><li>LTspice</li></ul>
+    </div>
+    <div>
+      <h3>Developer Tools</h3>
+      <ul class="tags"><li>Git</li><li>GitHub</li><li>Docker</li><li>Linux</li><li>Amazon Web Services</li><li>CI/CD pipelines</li><li>Postman</li><li>Swagger</li><li>Visual Studio</li><li>SQL Server Management Studio</li><li>Power Automate</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEADERSHIP ============ -->
+<section id="leadership" class="section wrap" aria-labelledby="lead-h">
+  <div class="section-head"><h2 id="lead-h">Clubs and Competitions</h2></div>
+  <ul class="awards">
+    <li>
+      <p class="strong">Technical Lead, IBMZ YorkU Club</p>
+      <p class="muted">September 2025 – Present</p>
+      <p>Lead the club's technical initiatives and hosted an IBM DevOps workshop for 50 students covering Linux, Git, Docker and CI/CD pipelines.</p>
+    </li>
+    <li>
+      <p class="strong">3rd Place, Automotive Innovation Competition</p>
+      <p class="muted">November 2025</p>
+      <p>Designed a three-tier EV trial subscription with VinFast against 25+ teams, and built its interactive prototype with tier comparisons and pricing simulations.</p>
+    </li>
+    <li>
+      <p class="strong">Top 8 Finalist, UNHack App Pitch Competition</p>
+      <p class="muted">November 2024</p>
+      <p>Pitched TransitTrust, a public transit safety app, against 50+ teams, backed by a survey of 100+ commuters and Figma prototypes I designed.</p>
+    </li>
+    <li>
+      <p class="strong">2nd Place, YEC Junior Design Competition</p>
+      <p class="muted">September 2024</p>
+      <p>Designed, built and stress-tested a seismic-resistant structural model against 25+ teams, judged by PhD engineers on structural integrity and creativity.</p>
+    </li>
+    <li>
+      <p class="strong">Intern Insider Fellow</p>
+      <p class="muted">September 2026</p>
+      <p>Selected as one of 100 students for a four-week fellowship, sharing my internship search and experiences through weekly LinkedIn posts.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ INTERESTS ============ -->
+<section class="outside wrap" aria-labelledby="outside-h">
+  <h2 id="outside-h">Outside of Work</h2>
+  <ul class="interests">
+    <li>Golf</li><li>Skiing</li><li>Fishing</li><li>Pickleball Intramurals</li><li>Building PCs</li>
+  </ul>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact wrap" aria-labelledby="contact-h">
+  <h2 id="contact-h">Get in Touch</h2>
+  <p>I'm always free to chat, whether it's about a role, a project or anything else. Email is the best way to reach me, and my resume is available on request. I'm based in Toronto (Eastern Time).</p>
+  <p class="contact-email"><a href="mailto:dannyobeid@gmail.com">dannyobeid@gmail.com</a></p>
+  <ul class="links">
+    <li><a href="https://www.linkedin.com/in/danny-obeid-069662326/" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://github.com/dannyo17" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="foot wrap">
+  <p>© 2026 Danny Obeid. Last updated November 2026.</p>
+</footer>
+
+<script src="main.js?v=2"></script>
+</body>
+</html>
